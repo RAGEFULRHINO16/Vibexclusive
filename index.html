@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>VIBE XCLUSIVE | Premium Streetwear</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7f13ec",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#191022",
+                        "surface-dark": "#231e2b",
+                        "surface-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "sans": ["Space Grotesk", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for modern look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen flex flex-col overflow-x-hidden selection:bg-primary selection:text-white">
+    <!-- Sticky Navigation -->
+    <header
+        class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-white/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-20 items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="size-16 flex items-center justify-center overflow-hidden">
+                        <img src="logo.png" alt="Vibe Xclusive Logo"
+                            class="h-full w-auto object-contain transition-transform group-hover:scale-110">
+                    </div>
+                    <h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white uppercase">VIBE XCLUSIVE
+                    </h1>
+                </a>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="index.html">Home</a>
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="maincatalog.html">Shop</a>
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#new-arrivals">New Arrivals</a>
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="aboutus.html">About Us</a>
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#locations">Stores</a>
+                </nav>
+                <!-- Actions -->
+                <div class="flex items-center gap-3">
+                    <button
+                        class="hidden sm:flex items-center justify-center size-10 rounded-full hover:bg-slate-100 dark:hover:bg-white/10 transition-colors">
+                        <span class="material-symbols-outlined text-slate-600 dark:text-slate-300">search</span>
+                    </button>
+                    <button
+                        class="flex items-center justify-center size-10 rounded-full hover:bg-slate-100 dark:hover:bg-white/10 transition-colors relative">
+                        <span class="material-symbols-outlined text-slate-600 dark:text-slate-300">shopping_bag</span>
+                        <span
+                            class="absolute top-1 right-1 size-2.5 bg-primary rounded-full border-2 border-background-light dark:border-background-dark"></span>
+                    </button>
+                    <button
+                        class="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white pl-4 pr-5 py-2.5 rounded-full text-sm font-bold transition-transform active:scale-95 shadow-lg shadow-primary/20">
+                        <span class="material-symbols-outlined !text-[20px]">chat</span>
+                        <span class="hidden sm:inline">WhatsApp Order</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent z-10">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-background-dark/80 via-transparent to-background-dark/80 z-10">
+                </div>
+                <img alt="Man wearing urban streetwear in moody lighting" class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9CSO1QjXB4zlf4sfgItFDKMMF-UC_EM-SMQK1bvCZJ9gy4wJ06LZ66rdjTa91sebCGubSrZmQlWVRprBfOmd6RmmqtQcZczpuAnd42LyIFPGCC_x0SFIoYw-ugsOUHBndNNTwwbeuaNcclcs3kFllke1DaKRl7LqAI1fEjz9rsGuxJtOnPsGolcrHSBHsiYlMfo5FVTHkn1VOIsveRcCrjS9Vnmtv2fb-VWRWUM6hzQieuzIsFFdZ9ke5yGvHOU1_qSiV55zvHds" />
+            </div>
+            <!-- Content -->
+            <div class="relative z-20 container mx-auto px-4 text-center">
+                <span
+                    class="inline-block px-4 py-1.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm text-xs font-bold tracking-widest text-white uppercase mb-6 animate-pulse">
+                    New Collection Live
+                </span>
+                <h2
+                    class="text-5xl md:text-7xl lg:text-9xl font-black text-white tracking-tighter leading-[0.9] mb-6 uppercase">
+                    Infinite Drops.<br /><span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">One
+                        Vibe.</span>
+                </h2>
+                <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-normal">
+                    Premium Streetwear. Designed in Sri Lanka for the global stage. Experience the grit, the style, and
+                    the exclusive culture.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button
+                        class="bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-200 transition-colors w-full sm:w-auto min-w-[200px]">
+                        Explore The Drop
+                    </button>
+                    <button
+                        class="px-8 py-4 rounded-full font-bold text-lg border border-white/20 text-white hover:bg-white/10 transition-colors backdrop-blur-sm w-full sm:w-auto min-w-[200px] flex items-center justify-center gap-2">
+                        <span>View Lookbook</span>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Scroll Indicator -->
+            <div
+                class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white/50 animate-bounce">
+                <span class="text-xs font-medium tracking-widest uppercase">Scroll</span>
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+        </section>
+        <div class="bg-primary py-3 overflow-hidden whitespace-nowrap relative z-10 -mt-2 rotate-1 shadow-xl">
+            <div class="inline-flex gap-8 animate-[marquee_30s_linear_infinite]">
+                <span class="text-white font-bold text-lg uppercase tracking-wider flex items-center gap-4">Island-wide
+                    Delivery <span class="size-2 bg-black rounded-full"></span> Cash on Delivery <span
+                        class="size-2 bg-black rounded-full"></span> Premium Quality <span
+                        class="size-2 bg-black rounded-full"></span> Limited Stock <span
+                        class="size-2 bg-black rounded-full"></span></span>
+                <span class="text-white font-bold text-lg uppercase tracking-wider flex items-center gap-4">Island-wide
+                    Delivery <span class="size-2 bg-black rounded-full"></span> Cash on Delivery <span
+                        class="size-2 bg-black rounded-full"></span> Premium Quality <span
+                        class="size-2 bg-black rounded-full"></span> Limited Stock <span
+                        class="size-2 bg-black rounded-full"></span></span>
+                <span class="text-white font-bold text-lg uppercase tracking-wider flex items-center gap-4">Island-wide
+                    Delivery <span class="size-2 bg-black rounded-full"></span> Cash on Delivery <span
+                        class="size-2 bg-black rounded-full"></span> Premium Quality <span
+                        class="size-2 bg-black rounded-full"></span> Limited Stock <span
+                        class="size-2 bg-black rounded-full"></span></span>
+                <span class="text-white font-bold text-lg uppercase tracking-wider flex items-center gap-4">Island-wide
+                    Delivery <span class="size-2 bg-black rounded-full"></span> Cash on Delivery <span
+                        class="size-2 bg-black rounded-full"></span> Premium Quality <span
+                        class="size-2 bg-black rounded-full"></span> Limited Stock <span
+                        class="size-2 bg-black rounded-full"></span></span>
+                <!-- Duplicate for seamless loop -->
+                <span class="text-white font-bold text-lg uppercase tracking-wider flex items-center gap-4">Island-wide
+                    Delivery <span class="size-2 bg-black rounded-full"></span> Cash on Delivery <span
+                        class="size-2 bg-black rounded-full"></span> Premium Quality <span
+                        class="size-2 bg-black rounded-full"></span> Limited Stock <span
+                        class="size-2 bg-black rounded-full"></span></span>
+                <span class="text-white font-bold text-lg uppercase tracking-wider flex items-center gap-4">Island-wide
+                    Delivery <span class="size-2 bg-black rounded-full"></span> Cash on Delivery <span
+                        class="size-2 bg-black rounded-full"></span> Premium Quality <span
+                        class="size-2 bg-black rounded-full"></span> Limited Stock <span
+                        class="size-2 bg-black rounded-full"></span></span>
+                <span class="text-white font-bold text-lg uppercase tracking-wider flex items-center gap-4">Island-wide
+                    Delivery <span class="size-2 bg-black rounded-full"></span> Cash on Delivery <span
+                        class="size-2 bg-black rounded-full"></span> Premium Quality <span
+                        class="size-2 bg-black rounded-full"></span> Limited Stock <span
+                        class="size-2 bg-black rounded-full"></span></span>
+                <span class="text-white font-bold text-lg uppercase tracking-wider flex items-center gap-4">Island-wide
+                    Delivery <span class="size-2 bg-black rounded-full"></span> Cash on Delivery <span
+                        class="size-2 bg-black rounded-full"></span> Premium Quality <span
+                        class="size-2 bg-black rounded-full"></span> Limited Stock <span
+                        class="size-2 bg-black rounded-full"></span></span>
+            </div>
+        </div>
+        <!-- Daily New Arrivals -->
+        <section id="new-arrivals" class="py-20 px-4">
+            <div class="max-w-[1400px] mx-auto">
+                <div class="flex items-end justify-between mb-10 px-2">
+                    <div>
+                        <h3
+                            class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white uppercase tracking-tight">
+                            Daily New Arrivals</h3>
+                        <p class="text-slate-500 dark:text-slate-400 mt-2">Fresh cuts straight from the studio.</p>
+                    </div>
+                    <a class="hidden md:flex items-center gap-1 text-primary hover:text-primary/80 font-bold"
+                        href="maincatalog.html">
+                        View All Drops <span class="material-symbols-outlined">arrow_right_alt</span>
+                    </a>
+                </div>
+                <div
+                    class="flex overflow-x-auto gap-6 pb-8 no-scrollbar snap-x snap-mandatory -mx-4 px-4 md:mx-0 md:px-0">
+                    <!-- Product Card 1 -->
+                    <div
+                        class="min-w-[280px] md:min-w-[320px] snap-center group relative bg-white dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative aspect-[3/4] overflow-hidden">
+                            <span
+                                class="absolute top-4 left-4 z-10 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">HOT</span>
+                            <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                data-alt="Man in oversized t-shirt looking away"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8dWXL6z5B7XVC5V9Xfsmomed28ldBMJ8Q_-BMRiJ8OZ4KTtwcbCX-4NC4o84RIcbtLcXxntdmuarN3dfoEX7wngxHSiD6SVcJsWyvXznI_AFYQgUgK3_l-yKgwx3_g3aDlQ_tohNAObq7SSwgRovMkQBSxmWlLHbgZzvxbdlMKy7XSq28yqGveQQH_aE0zJXlTxEuVBmsiwLMl8Oi2nN-dDTF5FGiWCbA02RIq2jJHUDz3UBJb86Mva2JALQ9H23jBpbS-srJQmc" />
+                            <button
+                                class="absolute bottom-4 right-4 size-10 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-lg z-20">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Acid Wash Oversized Tee
+                            </h4>
+                            <div class="flex items-center justify-between">
+                                <p class="text-slate-500 dark:text-slate-400 text-sm">LKR 3,500</p>
+                                <div class="flex gap-1">
+                                    <span class="size-3 bg-gray-800 rounded-full border border-gray-600"></span>
+                                    <span class="size-3 bg-purple-900 rounded-full"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div
+                        class="min-w-[280px] md:min-w-[320px] snap-center group relative bg-white dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative aspect-[3/4] overflow-hidden">
+                            <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                data-alt="Person wearing black cargo pants with pockets"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXyW_kDGdAeWQlXjhanrj5pK3Rtkb7LQ5BLwiVfkeUDACaTh_LQ25nnAHIiT6_xxQHJDliDB3u7Wrl1ftHnCnbNDCGuLz0Rfg3T2Zl6AikHzmnEdfcVvME9EAYj1ToGOYSmh_wnEcyNUtZM_53_dzf1KpzSQ6NMIrRAfyncJv4nWajUOzGgabaG5_sPQf6UtcyRKUMuF0yALSA-1NTBI9zSmNGdvFY3fdsDVG0ZpSuHkkpuFh3FI03AA3if6GNQMobQYmmG-OkTKs" />
+                            <button
+                                class="absolute bottom-4 right-4 size-10 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-lg z-20">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Tactical Cargo Pants</h4>
+                            <div class="flex items-center justify-between">
+                                <p class="text-slate-500 dark:text-slate-400 text-sm">LKR 4,200</p>
+                                <div class="flex gap-1">
+                                    <span class="size-3 bg-black rounded-full border border-gray-600"></span>
+                                    <span class="size-3 bg-green-900 rounded-full"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div
+                        class="min-w-[280px] md:min-w-[320px] snap-center group relative bg-white dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative aspect-[3/4] overflow-hidden">
+                            <span
+                                class="absolute top-4 left-4 z-10 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">NEW</span>
+                            <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                data-alt="Man in dark hoodie with hood up"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgPEhvkW1IxS39TbK1ptfCk0zPft20adjh4Nu8MPTeO2oucsBbz-GvtWQzGIrDJ-NQKM7Z_Bd2ohoms6FCRT9fXUmg13g5hOnQZnRqUdBy5grhhf0Z7vhXeZJATYxDUTuDpBaCP3aJIpXDJm8qfyz-cUyJFlnxqVQlyQWRuhSrGpY92FXRYqjlqauNMRvmJ-Z0RB8lxaQT-CWBNQxadGcMs6SOU5szt3zOyFYrjbolh1U4-exEuhle76HtSir-V613n-UhF1630LI" />
+                            <button
+                                class="absolute bottom-4 right-4 size-10 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-lg z-20">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Vibe Signature Hoodie</h4>
+                            <div class="flex items-center justify-between">
+                                <p class="text-slate-500 dark:text-slate-400 text-sm">LKR 5,500</p>
+                                <div class="flex gap-1">
+                                    <span class="size-3 bg-black rounded-full border border-gray-600"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div
+                        class="min-w-[280px] md:min-w-[320px] snap-center group relative bg-white dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative aspect-[3/4] overflow-hidden">
+                            <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                data-alt="Denim jacket with distressed details"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCBCpWKo0itUDRc2X6E4cGbeyDfC5p8g_TIlRyizTYoJog72r4rRt8yWZDkCwEsbuSYYeHJpA0-_5PzKxLwgKMxD5cuqvfaYsj7wfhhX5gZngP2E6qJ7h3OQmrBwdjHcomyrZ5lGotHWyg90mQMxj88qCsX68hpRYxa55_FDiAE-iZoMKK3v-IO0jwWcHcwnAgczaE--QIG3VJuEGUnLxWUA874la8zITYr2UWry_Ol_gGv8FWvRhX-4gItshOb9F3wXR1Zdl2P6Y" />
+                            <button
+                                class="absolute bottom-4 right-4 size-10 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-lg z-20">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Distressed Denim Jacket
+                            </h4>
+                            <div class="flex items-center justify-between">
+                                <p class="text-slate-500 dark:text-slate-400 text-sm">LKR 6,000</p>
+                                <div class="flex gap-1">
+                                    <span class="size-3 bg-blue-900 rounded-full"></span>
+                                    <span class="size-3 bg-gray-800 rounded-full"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Shop By Category -->
+        <section class="py-10 px-4">
+            <div class="max-w-[1400px] mx-auto">
+                <h3
+                    class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white uppercase tracking-tight mb-10">
+                    Shop by Category</h3>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+                    <!-- Oversized -->
+                    <div class="md:col-span-8 relative rounded-xl overflow-hidden group cursor-pointer">
+                        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Urban street scene with model in oversized shirt"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuATR7zFRrd_2Z9TGI9SVozXGXqp1SQhTjPFev1g2AeVr0DjPGPt8COJnYAJLcS_Uz7BmrYL5J1Y4NzIXaDEcDAduPqq6fV16Fa9Tivuq_EPqOHjgU78Cu6uPOS6KaOywj2OAZfF7vbWUgDMFlOiCRahmbSYL3DP8UAizzD0GXE8KMuCmQdLCfe6vdTEvRkeFGn93aE_W4ceEXkBVdark-hdlEukIlAmqiNKv_d-W2K3kHHccvTkfqCNg22lAa6uZkjYJY8gLWoDD98" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8">
+                            <h4 class="text-3xl font-bold text-white uppercase mb-2">Oversized Tees</h4>
+                            <p
+                                class="text-slate-300 mb-4 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                                The signature fit. Maximum comfort, zero compromise.</p>
+                            <span
+                                class="inline-flex items-center text-white font-bold text-sm uppercase tracking-wide border-b border-white pb-1">Shop
+                                Collection</span>
+                        </div>
+                    </div>
+                    <!-- Denim -->
+                    <div class="md:col-span-4 relative rounded-xl overflow-hidden group cursor-pointer">
+                        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Close up texture of ripped blue jeans"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdvqlQED1Llb4Z7-fDVvYNB82pVVU0sgWMbUS8RJJ-wA73aME0nFIHtY6H6tPyA_-mhKIqRtv7bbj7c3N7oxdjuiK6g5Aeh5sqnnn1ZB9_BexVoYLLW6EKkATRhcGjhHRDtFgdHztLDx8IEP2pCsEseOo6vQ-2wU5nsWNjZg5TJabJOoCSQB0q23NNEZ2SgwVEsDTfvA7rfGuYE0C-01RpAdnMj3xCA8mEgd6_LzeNcuE6VIJ5mWxrGO4PFFBiHNhiNTDZ-SOc53w" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8">
+                            <h4 class="text-3xl font-bold text-white uppercase mb-2">Denim</h4>
+                            <span
+                                class="inline-flex items-center text-white font-bold text-sm uppercase tracking-wide border-b border-white pb-1">Shop
+                                Collection</span>
+                        </div>
+                    </div>
+                    <!-- Imports -->
+                    <div class="md:col-span-4 relative rounded-xl overflow-hidden group cursor-pointer">
+                        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Fashionable accessories and sneakers flatlay"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk_qOy3Hv1RG4hOXsVLc1O8rxM7iDolKNVSPfm-g0bClURhJ77e1GnK-ymNImnSOCr9AJw1UFkdQ5rxy4eO4yLf0_FbPZRx9LwfyUU3oxUKHfm9ibnBhcdPt1xSXygggWeoNszzDzSWWkYyQBznODxbxAvewgPhNSdMo4X1tz2JFPoyyklQNbD2EIInLpvccpoqE1lSBXoTVcc7yG73HVTR8jdfP9erckeqYl9ZibpSsPkIxhg7iOtkJgxFHE2frl71coazywrypI" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8">
+                            <h4 class="text-3xl font-bold text-white uppercase mb-2">Imports</h4>
+                            <span
+                                class="inline-flex items-center text-white font-bold text-sm uppercase tracking-wide border-b border-white pb-1">Shop
+                                Collection</span>
+                        </div>
+                    </div>
+                    <!-- Accessories -->
+                    <div class="md:col-span-8 relative rounded-xl overflow-hidden group cursor-pointer">
+                        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Model posing with sunglasses and jewelry"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf5-MwnHi9MNUz2Aj4PgTOWKQ26Rd4I6vqbGBUVZybPDH0qqwq-NjjTKwcamKGqHgpwxHl_ezk5ADy6B5mSfmWvGIUr0EnLa4VViOzTyfNvTbCQCBt2rvND5YDNgy0EgF7rJjsENETEM6nBzF9sSkpIdEmuMH33caIg1AIfT8FLBsohKrYtSZOSs-Jk0x3TTfEYnWYkd_k_yL2N5PKLsuSQ2_M4FctPBwWvSOPVWSK8vhQ9TNmb0VMZhaLCIsuMJSjt79qG1N7_98" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8">
+                            <h4 class="text-3xl font-bold text-white uppercase mb-2">Accessories</h4>
+                            <p
+                                class="text-slate-300 mb-4 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                                Chains, shades, and caps to complete the look.</p>
+                            <span
+                                class="inline-flex items-center text-white font-bold text-sm uppercase tracking-wide border-b border-white pb-1">Shop
+                                Collection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Marketing Hook Section -->
+        <section class="py-24 px-4 bg-primary relative overflow-hidden">
+            <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+            </div>
+            <div class="max-w-4xl mx-auto text-center relative z-10">
+                <span
+                    class="inline-block px-3 py-1 bg-black text-white text-xs font-bold uppercase tracking-widest rounded mb-6 rotate-[-2deg]">Opinion</span>
+                <h2 class="text-5xl md:text-7xl font-black text-white uppercase leading-[0.9] mb-8 tracking-tighter">
+                    The Biggest Scam<br />
+                    <span class="text-black opacity-80">Is Paying Retail</span><br />
+                    For Boring Clothes.
+                </h2>
+                <p class="text-xl md:text-2xl font-medium text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
+                    Stop blending in. We design for the disruptors, the night owls, and the risk-takers. Join the
+                    movement. Wear VIBE.
+                </p>
+                <button
+                    class="bg-black text-white px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl shadow-black/30">
+                    Join The Revolution
+                </button>
+            </div>
+        </section>
+        <!-- Instagram Feed -->
+        <section class="py-20 bg-background-light dark:bg-background-dark">
+            <div class="max-w-[1400px] mx-auto px-4">
+                <div class="flex items-center justify-center gap-2 mb-12">
+                    <span class="material-symbols-outlined text-3xl">photo_camera</span>
+                    <h3 class="text-2xl font-bold uppercase tracking-wide">@VibeXclusive</h3>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="group relative aspect-square overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-800">
+                        <img class="w-full h-full object-cover transition duration-500 group-hover:scale-110 group-hover:opacity-75"
+                            data-alt="Fashion model posing in colorful outfit"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzVWGJVDboiN3tVhjjmL7AP9bVSdXlofGzV5kBc_lg9Du3R7mXBKVGF9k3kdRXT27T4Jnccde9ZeGrElYpx0202yxvwzmzrcPnF_xPq4EqVaOlPiexgvVixtoUO84_8lvdIESRoY5CFcv033xDRnnmTncAXEgoWyBIm8X2ZTTwlajik5fYRhd_BjNzkLZr_Lo4QKCNwfSKhMY0zXW3wXlvgs781O0dxiNkPLrByBKTrKVZaPwJRmdc0UB_3lz084ZX3KxrO3Mq19A" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="material-symbols-outlined text-white text-4xl drop-shadow-lg">favorite</span>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-square overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-800">
+                        <img class="w-full h-full object-cover transition duration-500 group-hover:scale-110 group-hover:opacity-75"
+                            data-alt="Model walking down street in stylish coat"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsgy2cuyv3xdbse9SwCr1QHvUcv9UFxfMxYhhpxXmdhO734JKrP3nehHL9Pcj1plZRSpzYj21lDTZq5dT2aVSNjukDH3x4Cwl7MGvTzJ9PEBOZ71RyjMaK8mUBNe4r4W1KOhCfjkk_JIKYmKG4iXma-53FYrPLbOPJIUIGUrzD323OVu-nXzDQ8XW6Ixrvrt_JjmJO_F-J6IKLV-AZyYx--5FinWg0D8Dy8ETEQpGrsTRkFm5YsSXalvwdD15Artz7gYF2kx0S_-Y" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="material-symbols-outlined text-white text-4xl drop-shadow-lg">favorite</span>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-square overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-800">
+                        <img class="w-full h-full object-cover transition duration-500 group-hover:scale-110 group-hover:opacity-75"
+                            data-alt="Dark moody portrait of man in streetwear"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuByoa_hd3_4EUEtGjhZDY6s5xbrNsc90WXsTdGE4GsndEWTf774DxQmx8R4Ygz7o8atYceHcO8BwMY_zWxbO8CV3BPX-Zsdq7JeVK--dG5K7crnSbb6ioywdgwAsmvW7PkifOdbne3dlRlAui9JwNeGfPqVJddf8s7PBjdJRT1qUj9IS4I5JPgW5HcYc0ZJ2oT9sbLg8ptwzirK0Lf-UCncsDyh0f7AszYyQBsv5_1BsFKumzvr8pRpPGDfJFlEXsC52kSWRboKEGY" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="material-symbols-outlined text-white text-4xl drop-shadow-lg">favorite</span>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-square overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-800">
+                        <img class="w-full h-full object-cover transition duration-500 group-hover:scale-110 group-hover:opacity-75"
+                            data-alt="Abstract fashion photography with neon lights"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxXu5xsEi8gVbo-IhZCZZfzT09js-Ezjp0cOJiY_NPjY-2VEsGsDZD8OgsS9C9zII4nfIvJQXk_j7inDx4jnzPlHcVo5jX3Cbh1HB7Xpbkvl3IQQOeTAfWRsG5ZG32VR0WT8i4Zcsvj72aJapzokdtnEv4eEVECM4nL4NCUT_u9uQp188ZXfpJj84E41W_rTNsN402XT8xgi0e_h1bj4jjzZV2phsHuefhjy5TjGakHkOTiM_zLTbUORL7wMfreQGNrD8OQX-cxug" />
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="material-symbols-outlined text-white text-4xl drop-shadow-lg">favorite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Store Locations Section -->
+        <section id="locations" class="py-20 px-4 bg-background-dark">
+            <div class="max-w-[1400px] mx-auto">
+                <!-- Page Header -->
+                <div
+                    class="max-w-7xl w-full mb-12 flex flex-col md:flex-row justify-between items-end gap-6 border-b border-white/10 pb-8">
+                    <div class="flex flex-col gap-2">
+                        <span class="text-primary font-bold tracking-widest text-sm uppercase">Find Us</span>
+                        <h1 class="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase leading-none">
+                            Our <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">Locations</span>
+                        </h1>
+                    </div>
+                    <p class="text-slate-400 max-w-md text-sm md:text-base leading-relaxed">
+                        Experience the collection in person. Visit our premium outlets in Colombo for exclusive drops
+                        and personalized styling.
+                    </p>
+                </div>
+                <!-- Locations Grid -->
+                <div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Card 1: Hill Street -->
+                    <article
+                        class="group relative flex flex-col bg-surface-dark rounded-xl border border-white/10 hover:border-primary/50 transition-all duration-300 overflow-hidden">
+                        <!-- Image/Map Area -->
+                        <div class="relative h-64 w-full bg-background-dark overflow-hidden">
+                            <div
+                                class="absolute inset-0 z-10 bg-gradient-to-t from-surface-dark to-transparent opacity-80">
+                            </div>
+                            <!-- Abstract Map Background -->
+                            <div class="w-full h-full bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-500"
+                                data-alt="Map view of Hill Street area" data-location="Dehiwala-Mount Lavinia"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBL2kuWEmosBs0cxeuqvKoMwciNEw0C80LBNEvd6VPxDhMFglgqRgXs83sebd68rjXZcdEQOK5HxjvTF-j9aqubNX8937EygyaJH4GyDib5tXT770C3nwRbl-cLgYU1OtuOr3vgyroSY6AjxQMV-Vf5HbMizy93CPwIFtgH2wucU6e7z26HPzoP8n5wX7I1zouJzQ9rIemRJGMhQFvdZSeLRl3YiyAcQlaUwA-RE2xCnglO1EVr49obQV8rYGI2AdbWBTJWWIyJNG0');">
+                            </div>
+                            <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+                                <span
+                                    class="px-3 py-1 bg-primary text-white text-xs font-bold uppercase tracking-wider rounded-full">Open
+                                    Now</span>
+                            </div>
+                        </div>
+                        <!-- Content Area -->
+                        <div class="p-6 md:p-8 flex flex-col gap-6 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h2
+                                    class="text-2xl font-bold text-white uppercase tracking-tight group-hover:text-primary transition-colors">
+                                    Hill Street Branch</h2>
+                                <div class="p-2 rounded-full bg-background-dark border border-white/10 text-slate-400">
+                                    <span class="material-symbols-outlined">storefront</span>
+                                </div>
+                            </div>
+                            <div class="space-y-4 border-t border-white/10 pt-6">
+                                <!-- Address -->
+                                <div class="flex gap-4">
+                                    <span class="material-symbols-outlined text-primary mt-0.5">location_on</span>
+                                    <div>
+                                        <p class="text-slate-200 font-medium">123 Hill Street</p>
+                                        <p class="text-slate-400 text-sm">Dehiwala-Mount Lavinia, Sri Lanka</p>
+                                    </div>
+                                </div>
+                                <!-- Landmark -->
+                                <div class="flex gap-4">
+                                    <span class="material-symbols-outlined text-primary mt-0.5">flag</span>
+                                    <div>
+                                        <p class="text-slate-200 font-medium">Landmark</p>
+                                        <p class="text-slate-400 text-sm">Next to HNB ATM</p>
+                                    </div>
+                                </div>
+                                <!-- Hours -->
+                                <div class="flex gap-4">
+                                    <span class="material-symbols-outlined text-primary mt-0.5">schedule</span>
+                                    <div>
+                                        <p class="text-slate-200 font-medium">Opening Hours</p>
+                                        <p class="text-slate-400 text-sm">Mon-Sun: 10:00 AM - 09:00 PM</p>
+                                    </div>
+                                </div>
+                                <!-- Phone -->
+                                <div class="flex gap-4">
+                                    <span class="material-symbols-outlined text-primary mt-0.5">call</span>
+                                    <div>
+                                        <p class="text-slate-200 font-medium">Contact</p>
+                                        <p class="text-slate-400 text-sm">+94 77 123 4567</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-auto pt-6">
+                                <button
+                                    class="w-full flex items-center justify-center gap-2 bg-white hover:bg-primary text-slate-900 hover:text-white font-bold uppercase tracking-wide py-4 px-6 rounded-lg transition-all duration-300 group/btn">
+                                    <span>Get Directions</span>
+                                    <span
+                                        class="material-symbols-outlined text-lg group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Card 2: Marine Drive -->
+                    <article
+                        class="group relative flex flex-col bg-surface-dark rounded-xl border border-white/10 hover:border-primary/50 transition-all duration-300 overflow-hidden">
+                        <!-- Image/Map Area -->
+                        <div class="relative h-64 w-full bg-background-dark overflow-hidden">
+                            <div
+                                class="absolute inset-0 z-10 bg-gradient-to-t from-surface-dark to-transparent opacity-80">
+                            </div>
+                            <!-- Abstract Map Background -->
+                            <div class="w-full h-full bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-500"
+                                data-alt="Map view of Marine Drive area" data-location="Colombo 03"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDS9Yussh6VW6UgWZJHlIyQOn0xEUWZYtYgElsXyNdovmzHAwwfVTUogjGNCd7BtMrYwVasFYpE-fmQhGEIhQmiP9sG4d0oObV5WJg7S6fjWpEPWVIWGnKhIBDI8D9nVtlKBv3MgaroOkhH-6iuaWcHSPAqOxvsTi8uxrhAwPUMqOWWIQc5AMEDTvj5pTSamKQfZiMwm1fJVLq9-tVI6JGI57P5Ag8RgvtUmyWeqJzKVwfffM1HnSCFghW0kJly30qHHZFjzsICjJw');">
+                            </div>
+                            <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+                                <span
+                                    class="px-3 py-1 bg-primary text-white text-xs font-bold uppercase tracking-wider rounded-full">Open
+                                    Now</span>
+                            </div>
+                        </div>
+                        <!-- Content Area -->
+                        <div class="p-6 md:p-8 flex flex-col gap-6 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h2
+                                    class="text-2xl font-bold text-white uppercase tracking-tight group-hover:text-primary transition-colors">
+                                    Marine Drive Branch</h2>
+                                <div class="p-2 rounded-full bg-background-dark border border-white/10 text-slate-400">
+                                    <span class="material-symbols-outlined">storefront</span>
+                                </div>
+                            </div>
+                            <div class="space-y-4 border-t border-white/10 pt-6">
+                                <!-- Address -->
+                                <div class="flex gap-4">
+                                    <span class="material-symbols-outlined text-primary mt-0.5">location_on</span>
+                                    <div>
+                                        <p class="text-slate-200 font-medium">45 Marine Drive</p>
+                                        <p class="text-slate-400 text-sm">Colombo 03, Sri Lanka</p>
+                                    </div>
+                                </div>
+                                <!-- Landmark -->
+                                <div class="flex gap-4">
+                                    <span class="material-symbols-outlined text-primary mt-0.5">flag</span>
+                                    <div>
+                                        <p class="text-slate-200 font-medium">Landmark</p>
+                                        <p class="text-slate-400 text-sm">Opposite Ocean View</p>
+                                    </div>
+                                </div>
+                                <!-- Hours -->
+                                <div class="flex gap-4">
+                                    <span class="material-symbols-outlined text-primary mt-0.5">schedule</span>
+                                    <div>
+                                        <p class="text-slate-200 font-medium">Opening Hours</p>
+                                        <p class="text-slate-400 text-sm">Mon-Sun: 10:00 AM - 09:00 PM</p>
+                                    </div>
+                                </div>
+                                <!-- Phone -->
+                                <div class="flex gap-4">
+                                    <span class="material-symbols-outlined text-primary mt-0.5">call</span>
+                                    <div>
+                                        <p class="text-slate-200 font-medium">Contact</p>
+                                        <p class="text-slate-400 text-sm">+94 77 987 6543</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-auto pt-6">
+                                <button
+                                    class="w-full flex items-center justify-center gap-2 bg-white hover:bg-primary text-slate-900 hover:text-white font-bold uppercase tracking-wide py-4 px-6 rounded-lg transition-all duration-300 group/btn">
+                                    <span>Get Directions</span>
+                                    <span
+                                        class="material-symbols-outlined text-lg group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-dark border-t border-white/5 pt-16 pb-8">
+        <div class="max-w-[1400px] mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand Info -->
+                <div class="flex flex-col gap-6">
+                    <a href="index.html" class="flex items-center gap-2 group">
+                        <div class="size-14 flex items-center justify-center overflow-hidden">
+                            <img src="logo.png" alt="Vibe Xclusive Logo"
+                                class="h-full w-auto object-contain transition-transform group-hover:scale-110 opacity-80 group-hover:opacity-100">
+                        </div>
+                        <h2 class="text-2xl font-bold text-white uppercase">VIBE XCLUSIVE</h2>
+                    </a>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Redefining Sri Lankan streetwear culture since 2023. Limited drops, premium fabrics, and designs
+                        that speak louder than words.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="size-10 rounded-full bg-white/5 hover:bg-primary flex items-center justify-center text-white transition-colors"
+                            href="#">
+                            <svg aria-hidden="true" class="size-5" fill="currentColor" viewbox="0 0 24 24">
+                                <path clip-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a class="size-10 rounded-full bg-white/5 hover:bg-primary flex items-center justify-center text-white transition-colors"
+                            href="#">
+                            <svg aria-hidden="true" class="size-5" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465C9.673 2.013 10.03 2 12.48 2h-.165zm-3.77 1.795c-.95.045-1.505.254-1.856.391-.412.16-.708.352-.968.613-.26.26-.452.556-.613.968-.137.35-.346.906-.391 1.856-.048 1.055-.06 1.37-.06 4.041v.08c0 2.67.012 2.986.06 4.041.045.95.254 1.505.391 1.856.16.412.352.708.613.968.26.26.556.452.968.613.35.137.906.346 1.856.391 1.055.048 1.37.06 4.041.06h.08c2.67 0 2.986-.012 4.041-.06.95-.045 1.505-.254 1.856-.391.412-.16.708-.352.968-.613.26-.26.452-.556.613-.968.137-.35.346-.906.391-1.856.048-1.055.06-1.37.06-4.041v-.08c0-2.67-.012-2.986-.06-4.041-.045-.95-.254-1.505-.391-1.856-.16-.412-.352-.708-.613-.968-.26-.26-.556-.452-.968-.613-.35-.137-.906-.346-1.856-.391-1.055-.048-1.37-.06-4.041-.06h-.08c-2.67 0-2.986.012-4.041.06zM12 5.545a6.455 6.455 0 110 12.91 6.455 6.455 0 010-12.91zm0 1.919a4.536 4.536 0 100 9.072 4.536 4.536 0 000-9.072zM15.337 5.317a1.28 1.28 0 112.56 0 1.28 1.28 0 01-2.56 0z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold uppercase mb-6 tracking-wide">Explore</h3>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="#new-arrivals">New Arrivals</a></li>
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="maincatalog.html">Best Sellers</a></li>
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="aboutus.html">About Us</a></li>
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm"
+                                href="#locations">Store Locator</a></li>
+                    </ul>
+                </div>
+                <!-- Support -->
+                <div>
+                    <h3 class="text-white font-bold uppercase mb-6 tracking-wide">Support</h3>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">FAQs</a>
+                        </li>
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Return
+                                Policy</a></li>
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Size
+                                Guide</a></li>
+                        <li><a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-white font-bold uppercase mb-6 tracking-wide">Join The List</h3>
+                    <p class="text-slate-400 text-sm mb-4">Get early access to drops and exclusive offers.</p>
+                    <form class="flex flex-col gap-3">
+                        <input
+                            class="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                            placeholder="Your Email" type="email" />
+                        <button
+                            class="bg-white text-black font-bold py-3 rounded-lg hover:bg-slate-200 transition-colors uppercase text-sm tracking-wide"
+                            type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Bottom Bar -->
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-slate-500 text-xs">© 2024 VIBE XCLUSIVE. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-2 text-slate-400">
+                        <span class="material-symbols-outlined text-lg">local_shipping</span>
+                        <span class="text-xs font-medium">Island-wide Delivery</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-slate-400">
+                        <span class="material-symbols-outlined text-lg">payments</span>
+                        <span class="text-xs font-medium">Cash On Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
